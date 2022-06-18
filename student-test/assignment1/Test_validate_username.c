@@ -23,5 +23,5 @@ void test_validate_my_username()
     const char *conf_username = malloc_username_from_conf_file();
     printf("hardcode username: %s\n", hardcode_username);
     printf("conf username: %s\n", hardcode_username);
-    TEST_ASSERT_TRUE_MESSAGE(hardcode_username,conf_username);
+    TEST_ASSERT_EQUAL_STRING_MESSAGE(hardcode_username,conf_username);
 }
